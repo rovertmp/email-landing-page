@@ -111,3 +111,25 @@ img {
         width: 50%;
         height: 50%;
         justify-self: right; }
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0;
+    max-width: 100%; }
+    .container.card {
+      padding: 1rem 0;
+      margin: 0 auto;
+      font-size: .32rem; }
+    .container-body {
+      padding: 0 0 1rem 0;
+      width: 100vw; }
+  #main-content {
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0; }
+    #main-content p {
+      padding: 0 .2rem;
+      text-align: center; }
+    #main-content h1 {
+      text-align: center;
+      padding: 2rem .2rem; } }
