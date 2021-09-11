@@ -1,0 +1,142 @@
+// General Styles
+@import 'config';
+@import 'utilities';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.6;
+  background: $bg-image no-repeat center center/cover;
+  color: $main-color;
+}
+
+a {
+  color: $main-color;
+
+  &:hover {
+    border-color: $dark-color;
+  }
+
+  &.current {
+    border-color: $main-color;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+
+h2,h3,h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+
+//Logo
+#logo {
+  width: 70px;
+  height: 70px;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  
+  ul {
+    display: flex;
+  }
+
+  li {
+      padding: 1rem .5rem;
+    }
+
+  a {
+    text-decoration: none;
+    color: $main-color;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: .5rem;
+    transition: border-color 0.5s;
+  
+    &:hover {
+      color: $dark-color;
+      border-color: $dark-color;
+    }
+  
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+#main-content {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);  
+  padding: 5rem;
+  h1 {
+    padding: 2rem 0.5rem;
+  }
+  p {
+    font-weight: 200;
+    padding: 0 0.5rem;
+  }
+
+  .card {
+    color: $dark-color;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    background: #f4f4f4;
+  }
+
+  #form-content {
+    h2 {
+      padding: .5rem 0;
+      font-weight: bolder;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 1rem;
+      text-align: center;
+    }
+  }
+
+  #main-form {
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      label {
+        width: 40%;
+        padding: .5rem 1rem;
+        justify-self: left;
+      }
+      input {
+        border: 1px solid $dark-color;
+        border-radius: 2px;
+        width: 50%;
+        height: 50%;
+        justify-self: right;
+      }
+    }
+
+    padding: .3rem 0;
+    font-size: 18px;
+  }
+}
+

@@ -1,0 +1,113 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+  .container-body {
+    padding: 2 0rem;
+    width: 500px;
+    max-width: 500px; }
+  .container.card {
+    display: inline-block;
+    color: #fff;
+    font-size: .55rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    background: #f4f4f4;
+    width: 300px;
+    height: 450px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.6;
+  background: url("../img/evan.jpg") no-repeat center center/cover;
+  color: #f4f4f4; }
+
+a {
+  color: #f4f4f4; }
+  a:hover {
+    border-color: #ccc; }
+  a.current {
+    border-color: #f4f4f4; }
+
+ul {
+  list-style: none; }
+
+h2, h3, h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+#logo {
+  width: 70px;
+  height: 70px; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 1rem .5rem; }
+  #main-nav a {
+    text-decoration: none;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: .5rem;
+    transition: border-color 0.5s; }
+    #main-nav a:hover {
+      color: #ccc;
+      border-color: #ccc; }
+    #main-nav a.current {
+      border-color: #f4f4f4; }
+
+#main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5rem; }
+  #main-content h1 {
+    padding: 2rem 0.5rem; }
+  #main-content p {
+    font-weight: 200;
+    padding: 0 0.5rem; }
+  #main-content .card {
+    color: #ccc;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    background: #f4f4f4; }
+  #main-content #form-content h2 {
+    padding: .5rem 0;
+    font-weight: bolder;
+    text-align: center; }
+  #main-content #form-content p {
+    margin-top: 1rem;
+    text-align: center; }
+  #main-content #main-form {
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    padding: .3rem 0;
+    font-size: 18px; }
+    #main-content #main-form > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      #main-content #main-form > div label {
+        width: 40%;
+        padding: .5rem 1rem;
+        justify-self: left; }
+      #main-content #main-form > div input {
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        width: 50%;
+        height: 50%;
+        justify-self: right; }
